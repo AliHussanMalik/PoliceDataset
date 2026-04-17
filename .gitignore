@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+*.db
+.ipynb_checkpoints/
+.venv/
+.env
+.DS_Store
+
+# Generated outputs
+outputs/
