@@ -2,7 +2,17 @@ import pandas as pd
 import streamlit as st
 from sqlalchemy import text
 
+import sys
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+SRC = ROOT / "src"
+
+sys.path.insert(0, str(SRC))
+
 from police_dataset.db import engine
+
+# from police_dataset.db import engine
 
 
 st.set_page_config(page_title="Pakistan Crime Dashboard", layout="wide")
